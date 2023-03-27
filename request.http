@@ -1,0 +1,35 @@
+
+//Criando um produto(Create)
+POST http://localhost:4002/products
+content-Type: application/json
+
+{
+  "name": "Caneta preta",
+  "price": 12.00
+}
+//-----------------------------------------------------------------
+
+//Buscando os produtos criados (Read)
+###
+GET http://localhost:4002/products
+//------------------------------------------------------------------
+
+//Buscando um produto específico pelo ID (Read)
+###
+GET http://localhost:4002/products/c367b905-b790-4c53-9ced-6c12d6408245
+//------------------------------------------------------------------
+
+//alterando um produto específico pelo ID (Update)
+###
+PUT  http://localhost:4002/products/2173122b-ccf5-49d2-8baf-714d2e35b1ff
+content-Type: application/json
+
+{
+  "name": "Caneta verde",
+  "price": 11.00
+}
+//-------------------------------------------------------------------
+
+//removendo um produto específico pelo ID (Delete)
+###
+DELETE http://localhost:4002/products/2173122b-ccf5-49d2-8baf-714d2e35b1ff
